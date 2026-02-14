@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sin Conexión | Punto y Lana</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: linear-gradient(135deg, #FFF8F5 0%, #FFE4EC 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 400px;
+        }
+
+        .icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        h1 {
+            color: #5D4037;
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            color: #795548;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #E91E63, #F48FB1);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(233, 30, 99, 0.3);
+        }
+
+        .yarn {
+            position: fixed;
+            opacity: 0.1;
+            font-size: 120px;
+        }
+
+        .yarn-1 {
+            top: 10%;
+            left: 5%;
+        }
+
+        .yarn-2 {
+            bottom: 10%;
+            right: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="yarn yarn-1">🧶</div>
+    <div class="yarn yarn-2">🧵</div>
+
+    <div class="container">
+        <div class="icon">📡</div>
+        <h1>¡Ups! Sin conexión</h1>
+        <p>
+            Parece que tu conexión a internet se desenredó.
+            No te preocupes, revisa tu conexión y vuelve a intentarlo.
+        </p>
+        <a href="/" class="btn" onclick="window.location.reload(); return false;">
+            Reintentar
+        </a>
+    </div>
+</body>
+
+</html>

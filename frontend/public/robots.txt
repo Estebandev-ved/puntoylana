@@ -1,0 +1,21 @@
+# Robots.txt para Punto y Lana
+# https://puntoylana.com
+
+User-agent: *
+Allow: /
+
+# Bloquear rutas privadas
+Disallow: /admin
+Disallow: /perfil
+Disallow: /checkout
+Disallow: /error
+
+# Bloquear archivos de assets innecesarios para SEO
+Disallow: /assets/*.js$
+Disallow: /assets/*.css$
+
+# Sitemap
+Sitemap: https://puntoylana.com/sitemap.xml
+
+# Crawl-delay para ser amigables con el servidor
+Crawl-delay: 1

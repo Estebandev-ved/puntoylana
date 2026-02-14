@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Punto y Lana | Tienda de Crochet, Amigurumis y Lanas</title>
+  <meta name="description"
+    content="Tienda online de materiales para crochet, lanas premium, kits de amigurumis, patrones y cursos. ¡Tejiendo sueños, creando sonrisas! Envío a toda Colombia." />
+  <meta name="keywords" content="crochet, amigurumi, lana, tejido, manualidades, patrones, ganchillo, Colombia" />
+  <meta name="author" content="Punto y Lana" />
+
+  <!-- Open Graph (Facebook/Instagram) -->
+  <meta property="og:title" content="Punto y Lana | Tienda de Crochet y Amigurumis" />
+  <meta property="og:description"
+    content="Los mejores materiales para tus proyectos de crochet. Lanas, kits, patrones y más." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://puntoylana.com" />
+  <meta property="og:image" content="https://puntoylana.com/og-image.jpg" />
+  <meta property="og:locale" content="es_CO" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Punto y Lana | Tienda de Crochet" />
+  <meta name="twitter:description" content="Los mejores materiales para tus proyectos de crochet." />
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#E91E63" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script type="module" crossorigin src="/assets/index-BP_vm6K7.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-3UhrkxdS.css">
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <!-- Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then((registration) => {
+            console.log('🧶 Service Worker registrado:', registration.scope);
+
+            // Detectar actualizaciones
+            registration.addEventListener('updatefound', () => {
+              const newWorker = registration.installing;
+              newWorker.addEventListener('statechange', () => {
+                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                  // Hay una nueva versión disponible
+                  console.log('📦 Nueva versión disponible');
+                }
+              });
+            });
+          })
+          .catch((error) => {
+            console.warn('❌ Error registrando Service Worker:', error);
+          });
+      });
+    }
+  </script>
+</body>
+
+</html>
