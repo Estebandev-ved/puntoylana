@@ -91,5 +91,5 @@ Este proyecto es de uso privado y educativo.
 
 ---
 <div align="center">
-  Hecho con ❤️ por [Tu Nombre]
+  Hecho con ❤️ por Estebandev
 </div>
